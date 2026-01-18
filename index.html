@@ -1,76 +1,60 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Ricardo Pearl Joseph</title>
+<section class="section">
+  <h2>Projects</h2>
 
-  <!-- Google Font -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <!-- FalconEye -->
+  <div class="project">
+    <h3 class="project-link" onclick="openModal('falconeye')">FalconEye</h3>
+    <span class="tech">Python · Machine Learning · Aviation</span>
+  </div>
 
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
+  <!-- faultSense -->
+  <div class="project">
+    <h3 class="project-link" onclick="openModal('faultsense')">faultSense</h3>
+    <span class="tech">Python · Predictive Analytics · Aviation</span>
+  </div>
 
-  <main class="container">
+  <!-- Adobe React Spectrum -->
+  <div class="project">
+    <h3 class="project-link" onclick="openModal('reactspectrum')">Adobe React Spectrum</h3>
+    <span class="tech">React · TypeScript · Open Source</span>
+  </div>
+</section>
 
-    <!-- Hero -->
-    <section class="hero">
-      <h1>Ricardo Pearl Joseph</h1>
-      <p class="subtitle">
-        Curious by default. Working at the intersection of machine learning and aviation systems.
-      </p>
-    </section>
+<!-- Modals (paste at bottom, before </body>) -->
 
-    <!-- Focus -->
-    <section class="section">
-      <h2>Focus</h2>
-      <ul class="list">
-        <li>Machine learning for aircraft fault detection and diagnostics</li>
-        <li>Simulation-driven understanding of flight and control systems</li>
-        <li>Engineering-first software with an emphasis on clarity and correctness</li>
-      </ul>
-    </section>
+<!-- FalconEye Modal -->
+<div id="falconeye" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('falconeye')">&times;</span>
+    <h3>FalconEye</h3>
+    <p>
+      FalconEye is a machine-learning prototype focused on detecting and classifying simulated aircraft system faults using sensor data. 
+      The project explores how data-driven models can assist in early fault identification, reduce pilot workload, and improve system reliability.
+    </p>
+    <p><strong>Key focus:</strong> feature extraction, fault classification, visualization, and ML fundamentals applied to aviation systems.</p>
+  </div>
+</div>
 
-    <!-- Projects -->
-    <section class="section">
-      <h2>Projects</h2>
+<!-- faultSense Modal -->
+<div id="faultsense" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('faultsense')">&times;</span>
+    <h3>faultSense</h3>
+    <p>
+      faultSense is an experimental extension of fault detection ideas, aimed at understanding how predictive analytics and pattern recognition can be used to anticipate failures before they occur.
+    </p>
+    <p><strong>Focus:</strong> system thinking, data interpretation, and ML pipelines adapted for safety-critical aerospace domains.</p>
+  </div>
+</div>
 
-      <div class="project">
-        <h3>FalconEye</h3>
-        <p>
-          Aircraft fault detection system using machine learning to identify simulated subsystem failures.
-        </p>
-        <span class="tech">Python · Machine Learning · Data Analysis</span>
-      </div>
-
-      <div class="project">
-        <h3>faultSense</h3>
-        <p>
-          Early-stage exploration into intelligent fault sensing and anomaly detection for aviation systems.
-        </p>
-        <span class="tech">Python · Signal Processing · ML</span>
-      </div>
-
-      <div class="project">
-        <h3>Adobe React Spectrum</h3>
-        <p>
-          Open-source contribution focused on improving component behavior and UI reliability.
-        </p>
-        <span class="tech">React · TypeScript · Open Source</span>
-      </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-      <a href="https://github.com/gh0st0706" target="_blank">GitHub</a>
-      <a href="https://www.linkedin.com/in/ricardo-pearl-joseph-4b50a330a/" target="_blank">LinkedIn</a>
-      <a href="mailto:ricardopearljoseph@email.com">Email</a>
-    </footer>
-
-  </main>
-
-</body>
-</html>
+<!-- Adobe React Spectrum Modal -->
+<div id="reactspectrum" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('reactspectrum')">&times;</span>
+    <h3>Adobe React Spectrum</h3>
+    <p>
+      Contributed to Adobe’s React Spectrum design system by investigating and addressing a UI interaction bug where a button remained pressed after opening a modal.
+    </p>
+    <p><strong>Focus:</strong> reading production-grade code, understanding accessibility-focused component design, and contributing to a large open-source codebase.</p>
+  </div>
+</div>
